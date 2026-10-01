@@ -1,101 +1,65 @@
-# Celios CMS Starter Skeleton
+# Celios Starter
 
-A clean, lightweight Laravel application template pre-configured to build client websites powered by **Celios CMS** and **Filament v5**.
+Application skeleton for creating client projects using Celios CMS.
 
----
+## Requirements
 
-## What is Inside?
+- PHP 8.3 or higher
+- Composer
+- Node.js and NPM
+- MySQL, PostgreSQL, or SQLite database
 
-- **Celios Core Engine (`celios/core`)**: Multilingual CMS pages, blog, document management, newsletter, dynamic form builder, CRM contacts, and role-based access control.
-- **Pluggable Payments (`celios/payment`)**: Multi-gateway payment manager (Stripe, PayPal, Mollie, Bank Wire).
-- **Filament Admin Panel**: Accessible at `/admin` with unified multi-theme support (Ocean Blue, Emerald Forest, Midnight Obsidian).
-- **Zero Core Clutter**: All core logic, migrations, routes, and admin resources are loaded from the package, keeping your client application codebase minimal and maintainable.
+## Setup Instructions
 
----
+1. Clone this repository for your new client project:
+   git clone git@github.com:celiclazar/celios-starter.git project-name
+   cd project-name
 
-## Quickstart Setup
+2. Point the Git remote to the new client repository:
+   git remote set-url origin git@github.com:celiclazar/new-client-repo.git
 
-### 1. Install Dependencies
-```bash
-composer install
-```
+3. Install PHP dependencies:
+   composer install
 
-### 2. Configure Environment
-```bash
-cp .env.example .env
-php artisan key:generate
-```
+4. Create the environment file:
+   cp .env.example .env
+   php artisan key:generate
 
-### 3. Run the Celios 1-Step Installer
-```bash
-php artisan celios:install
-```
-This interactive command will:
-- Publish Celios configurations (`config/modules.php`, `config/locales.php`).
-- Publish and verify the admin theme styling.
-- Create the `storage:link` symlink.
-- Run all database migrations (both Laravel and Celios CMS tables).
-- Interactively create your initial **Superadmin** user.
+5. Configure database credentials in `.env`:
+   Set your DB_CONNECTION, DB_HOST, DB_DATABASE, DB_USERNAME, and DB_PASSWORD values.
 
-### 4. Build Frontend Assets
-```bash
-npm install
-npm run build
-```
+6. Run the Celios installer:
+   php artisan celios:install
 
-### 5. Start the Application
-```bash
+   This command will publish configurations, run database migrations, create the storage symlink, and prompt you to create the initial Superadmin user.
+
+7. Install and build frontend assets:
+   npm install
+   npm run build
+
+8. Commit and push the project to your client repository:
+   git push -u origin main
+
+## Accessing the Admin Panel
+
+Start the local server:
 php artisan serve
-```
-Visit `http://localhost:8000/admin` and log in with your Superadmin credentials!
 
----
+Navigate to:
+http://localhost:8000/admin
 
-## Pushing to a New Git Repository
+Log in with the Superadmin credentials created in step 6.
 
-To connect this starter project to your new GitHub repository:
+## Updating Celios Core
 
-```bash
-git remote add origin git@github.com:celiclazar/your-client-repo.git
-git branch -M main
-git push -u origin main
-```
+When an update or bug fix is released for Celios Core:
 
----
+1. Update packages:
+   composer update celios/*
 
-## Composer Package Configuration
+2. Run any new migrations:
+   php artisan migrate
 
-By default during local development, `composer.json` uses a **path repository** to link directly to your local Celios packages:
-
-```json
-"repositories": [
-    {
-        "type": "path",
-        "url": "../celios/packages/*",
-        "options": {
-            "symlink": true
-        }
-    }
-]
-```
-
-When you publish `celios/core` to GitHub or Packagist, simply swap the repository path in `composer.json` with your VCS URL or require the published package version:
-
-```json
-"require": {
-    "celios/core": "^1.0",
-    "celios/payment": "^1.0"
-}
-```
-
----
-
-## Updating Celios Core in the Future
-
-Whenever a new version of Celios Core is released, simply run:
-
-```bash
-composer update celios/*
-php artisan migrate
-```
-Zero merge conflicts, zero manual code updates.
+3. Commit the updated composer.lock file to the client repository:
+   git commit -am "chore: update celios core"
+   git push origin main
