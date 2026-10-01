@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c57646f505ee606f81cfa8b696f59534",
+    "content-hash": "a95789449d2575b55e78921889f0ff80",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -704,11 +704,17 @@
         },
         {
             "name": "celios/core",
-            "version": "dev-composer-versioning",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:celiclazar/celios-core.git",
+                "reference": "383cf786e12ead785ce190bc29b473d891c99492"
+            },
             "dist": {
-                "type": "path",
-                "url": "../celios/packages/core",
-                "reference": "338a063374b367cd260594c1d7394108e9589c30"
+                "type": "zip",
+                "url": "https://api.github.com/repos/celiclazar/celios-core/zipball/383cf786e12ead785ce190bc29b473d891c99492",
+                "reference": "383cf786e12ead785ce190bc29b473d891c99492",
+                "shasum": ""
             },
             "require": {
                 "awcodes/filament-curator": "^5.0",
@@ -750,18 +756,21 @@
                 }
             ],
             "description": "Core engine, multilingual routing, and administration platform for Celios CMS.",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "time": "2026-09-30T22:25:16+00:00"
         },
         {
             "name": "celios/payment",
-            "version": "dev-composer-versioning",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/celiclazar/celios-payment.git",
+                "reference": "bc64daff243554afd1f493e1ba05ae0b465b2914"
+            },
             "dist": {
-                "type": "path",
-                "url": "../celios/packages/payment",
-                "reference": "ee02c5e4c0cb387a2d5c4e2ef57e7409b026eec6"
+                "type": "zip",
+                "url": "https://api.github.com/repos/celiclazar/celios-payment/zipball/bc64daff243554afd1f493e1ba05ae0b465b2914",
+                "reference": "bc64daff243554afd1f493e1ba05ae0b465b2914",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "^11.0|^12.0|^13.0",
@@ -790,10 +799,11 @@
                 }
             ],
             "description": "Pluggable payment engine for Celios CMS supporting Stripe, PayPal, Mollie, and Bank Wire Transfer.",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/celiclazar/celios-payment/tree/v1.0.0",
+                "issues": "https://github.com/celiclazar/celios-payment/issues"
+            },
+            "time": "2026-09-30T20:14:47+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -11879,15 +11889,12 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "celios/core": 20,
-        "celios/payment": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.3"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
 }
