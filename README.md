@@ -33,11 +33,14 @@ Application skeleton for creating client projects using Celios CMS.
 
    This command will publish configurations, run database migrations, create the storage symlink, and prompt you to create the initial Superadmin user.
 
-7. Install and build frontend assets:
+7. Seed mandatory system pages (Home, Terms & Conditions, Privacy Policy, Cookie Policy):
+   php artisan db:seed
+
+8. Install and build frontend assets:
    npm install
    npm run build
 
-8. Commit and push the project to your client repository:
+9. Commit and push the project to your client repository:
    git push -u origin main
 
 ## Accessing the Admin Panel
