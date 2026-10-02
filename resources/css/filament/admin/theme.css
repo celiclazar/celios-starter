@@ -5,6 +5,8 @@
 
 @source '../../../../packages/*/resources/views/**/*.blade.php';
 @source '../../../../packages/*/src/Filament/**/*';
+@source '../../../../vendor/celios/*/resources/views/**/*.blade.php';
+@source '../../../../vendor/celios/*/src/Filament/**/*';
 @source '../../../../app/Providers/Filament/**/*';
 @source '../../../../resources/views/**/*.blade.php';
 @source '../../../../vendor/filament/**/*.blade.php';
