@@ -704,16 +704,16 @@
         },
         {
             "name": "celios/core",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:celiclazar/celios-core.git",
-                "reference": "33fc064d6386c9901f008c6e28bd70ff9bd00da6"
+                "url": "https://github.com/celiclazar/celios-core.git",
+                "reference": "acc6f8beb81c721fb39d4994d15600f674e9e12c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/celiclazar/celios-core/zipball/33fc064d6386c9901f008c6e28bd70ff9bd00da6",
-                "reference": "33fc064d6386c9901f008c6e28bd70ff9bd00da6",
+                "url": "https://api.github.com/repos/celiclazar/celios-core/zipball/acc6f8beb81c721fb39d4994d15600f674e9e12c",
+                "reference": "acc6f8beb81c721fb39d4994d15600f674e9e12c",
                 "shasum": ""
             },
             "require": {
@@ -760,7 +760,11 @@
                 }
             ],
             "description": "Core engine, multilingual routing, and administration platform for Celios CMS.",
-            "time": "2026-10-02T18:55:24+00:00"
+            "support": {
+                "source": "https://github.com/celiclazar/celios-core/tree/v1.0.2",
+                "issues": "https://github.com/celiclazar/celios-core/issues"
+            },
+            "time": "2026-10-02T20:00:48+00:00"
         },
         {
             "name": "celios/payment",
