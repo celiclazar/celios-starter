@@ -65,11 +65,25 @@
       0 => 'Celios\\Core\\CeliosServiceProvider',
     ),
   ),
+  'celios/crm' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Modules\\Crm\\CrmServiceProvider',
+    ),
+  ),
   'celios/payment' => 
   array (
     'providers' => 
     array (
       0 => 'Modules\\Payment\\PaymentServiceProvider',
+    ),
+  ),
+  'dedoc/scramble' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Dedoc\\Scramble\\ScrambleServiceProvider',
     ),
   ),
   'filament/actions' => 
@@ -213,6 +227,24 @@
       0 => 'Spatie\\Activitylog\\ActivitylogServiceProvider',
     ),
   ),
+  'spatie/laravel-backup' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Backup\\BackupServiceProvider',
+    ),
+  ),
+  'spatie/laravel-health' => 
+  array (
+    'aliases' => 
+    array (
+      'Health' => 'Spatie\\Health\\Facades\\Health',
+    ),
+    'providers' => 
+    array (
+      0 => 'Spatie\\Health\\HealthServiceProvider',
+    ),
+  ),
   'spatie/laravel-medialibrary' => 
   array (
     'providers' => 
@@ -225,6 +257,17 @@
     'providers' => 
     array (
       0 => 'Spatie\\Permission\\PermissionServiceProvider',
+    ),
+  ),
+  'spatie/laravel-signal-aware-command' => 
+  array (
+    'aliases' => 
+    array (
+      'Signal' => 'Spatie\\SignalAwareCommand\\Facades\\Signal',
+    ),
+    'providers' => 
+    array (
+      0 => 'Spatie\\SignalAwareCommand\\SignalAwareCommandServiceProvider',
     ),
   ),
   'spatie/laravel-translatable' => 
