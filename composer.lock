@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a3d337692a73c3eb2bf3cd10a9f95c0",
+    "content-hash": "037fe0e6abde2c21f91ffc6f4b3950a9",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -707,7 +707,7 @@
             "version": "v1.0.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:celiclazar/celios-core.git",
+                "url": "https://github.com/celiclazar/celios-core.git",
                 "reference": "9b9f0b5e4f1a0049ca7607eaa88eb18644ee5267"
             },
             "dist": {
@@ -767,7 +767,7 @@
             "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:celiclazar/celios-crm.git",
+                "url": "https://github.com/celiclazar/celios-crm.git",
                 "reference": "dd13950c46374f2749db3de940bcbed1e26183c1"
             },
             "dist": {
@@ -810,7 +810,7 @@
             "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:celiclazar/celios-payment.git",
+                "url": "https://github.com/celiclazar/celios-payment.git",
                 "reference": "bc64daff243554afd1f493e1ba05ae0b465b2914"
             },
             "dist": {
@@ -10604,12 +10604,12 @@
             "version": "v5.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
+                "url": "https://github.com/phpdotenv/phpdotenv.git",
                 "reference": "301c07936b16d88628b126b01d082ba153cf4c40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/301c07936b16d88628b126b01d082ba153cf4c40",
+                "url": "https://api.github.com/repos/phpdotenv/phpdotenv/zipball/301c07936b16d88628b126b01d082ba153cf4c40",
                 "reference": "301c07936b16d88628b126b01d082ba153cf4c40",
                 "shasum": ""
             },
@@ -12799,15 +12799,15 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.3"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.3.33"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
