@@ -8,15 +8,18 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/celiclazar/celios-core.git"
+            "url": "https://github.com/celiclazar/celios-core.git",
+            "no-api": true
         },
         {
             "type": "vcs",
-            "url": "https://github.com/celiclazar/celios-payment.git"
+            "url": "https://github.com/celiclazar/celios-payment.git",
+            "no-api": true
         },
         {
             "type": "vcs",
-            "url": "https://github.com/celiclazar/celios-crm.git"
+            "url": "https://github.com/celiclazar/celios-crm.git",
+            "no-api": true
         }
     ],
     "require": {
