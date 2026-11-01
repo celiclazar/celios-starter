@@ -108,7 +108,7 @@ return [
             'description' => 'Manage customer leads, contact pipeline, interaction notes, and form-to-lead conversions.',
             'icon' => 'heroicon-o-user-group',
             'resources' => [
-                \Celios\Core\Filament\Resources\Contacts\ContactResource::class,
+                \Modules\Crm\Filament\Resources\Contacts\ContactResource::class,
             ],
         ],
 
