@@ -31,3 +31,6 @@ Thumbs.db
 *.sqlite-shm
 *.sqlite-wal
 *.sqlite-journal
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitignore
+
