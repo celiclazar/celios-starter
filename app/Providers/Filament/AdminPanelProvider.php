@@ -57,8 +57,11 @@ class AdminPanelProvider extends PanelProvider
             ->viteTheme('resources/css/filament/admin/theme.css')
             ->databaseNotifications()
             ->login()
-            ->brandName(fn () => function_exists('setting') ? setting('site_name', 'Celios CMS') : 'Celios CMS')
-            ->favicon('favicon.ico')
+            ->brandName(fn () => (function_exists('current_brand') && current_brand()?->name) ? current_brand()->name : (function_exists('setting') ? setting('site_name', 'Celios CMS') : 'Celios CMS'))
+            ->brandLogo(fn () => (function_exists('current_brand') && current_brand()?->logo_light_url) ? current_brand()->logo_light_url : (file_exists(public_path('images/light-logo.png')) ? asset('images/light-logo.png') : null))
+            ->darkModeBrandLogo(fn () => (function_exists('current_brand') && current_brand()?->logo_dark_url) ? current_brand()->logo_dark_url : (file_exists(public_path('images/dark-logo.png')) ? asset('images/dark-logo.png') : null))
+            ->brandLogoHeight('2rem')
+            ->favicon(fn () => (function_exists('current_brand') && current_brand()?->favicon_url) ? current_brand()->favicon_url : 'favicon.ico')
             ->colors($themePalettes[$adminTheme] ?? $themePalettes['ocean'])
             ->font('Inter')
             ->darkMode(
