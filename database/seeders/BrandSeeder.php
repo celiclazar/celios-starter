@@ -12,33 +12,29 @@ class BrandSeeder extends Seeder
      */
     public function run(): void
     {
-        $siteName = function_exists('setting') ? setting('site_name', 'Celios') : 'Celios';
+        $siteName = function_exists('setting') ? setting('site_name', config('app.name', 'My Website')) : config('app.name', 'My Website');
 
         Brand::firstOrCreate(
-            ['slug' => 'celios'],
+            ['slug' => 'default'],
             [
-                'name' => $siteName ?: 'Celios',
-                'headline' => 'Modern Modular Digital Experience Platform',
-                'description' => 'Enterprise headless CMS and digital application suite built with Laravel & Filament.',
-                'copyright_text' => '© '.date('Y').' '.($siteName ?: 'Celios').'. All rights reserved.',
+                'name' => $siteName ?: config('app.name', 'My Website'),
+                'headline' => 'Welcome to our website',
+                'description' => 'Powered by Celios CMS',
+                'copyright_text' => '© '.date('Y').' '.($siteName ?: config('app.name', 'My Website')).'. All rights reserved.',
                 'primary_domain' => 'localhost',
-                'domains' => ['127.0.0.1', 'celios.test'],
-                'company_name' => 'Celios Digital Solutions',
-                'email' => 'contact@celios.io',
-                'phone' => '+381 11 123 4567',
-                'address' => 'Bulevar Mihajla Pupina 10',
+                'domains' => ['127.0.0.1', 'localhost'],
+                'company_name' => $siteName ?: config('app.name', 'Company Name'),
+                'email' => 'contact@example.com',
+                'phone' => '+381 11 000 0000',
+                'address' => 'Glavna 1',
                 'city' => 'Belgrade',
                 'postal_code' => '11000',
                 'country' => 'Serbia',
-                'social_links' => [
-                    'instagram' => 'https://instagram.com/celios',
-                    'linkedin' => 'https://linkedin.com/company/celios',
-                    'github' => 'https://github.com/celios',
-                ],
+                'social_links' => [],
                 'default_locale' => 'sr',
-                'supported_locales' => ['sr', 'en', 'it'],
+                'supported_locales' => ['sr', 'en'],
                 'default_currency' => 'EUR',
-                'supported_currencies' => ['EUR', 'RSD', 'USD'],
+                'supported_currencies' => ['EUR', 'RSD'],
                 'currency_symbol_position' => 'after',
                 'is_default' => true,
                 'is_active' => true,
