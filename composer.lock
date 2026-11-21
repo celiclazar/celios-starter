@@ -705,35 +705,35 @@
         },
         {
             "name": "celios/core",
-            "version": "v1.0.11",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/celiclazar/celios-core.git",
-                "reference": "8f5928368b7bbd281ad018f333a133a5251b9a84"
+                "reference": "ea543c852045d3dedc91c4bf1705d90eeb4c6ead"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/celiclazar/celios-core/zipball/8f5928368b7bbd281ad018f333a133a5251b9a84",
-                "reference": "8f5928368b7bbd281ad018f333a133a5251b9a84",
+                "url": "https://api.github.com/repos/celiclazar/celios-core/zipball/ea543c852045d3dedc91c4bf1705d90eeb4c6ead",
+                "reference": "ea543c852045d3dedc91c4bf1705d90eeb4c6ead",
                 "shasum": ""
             },
             "require": {
                 "awcodes/filament-curator": "^5.0",
-                "bezhansalleh/filament-language-switch": "^4.3",
-                "bezhansalleh/filament-shield": "^4.2",
+                "bezhansalleh/filament-language-switch": "^4.3|^5.0",
+                "bezhansalleh/filament-shield": "^4.2|^4.3",
                 "dedoc/scramble": "^0.13.43",
                 "filament/filament": "^5.0|^4.0|^3.0",
                 "illuminate/support": "^11.0|^12.0|^13.0",
                 "laravel/passkeys": "^0.2.1",
                 "laravel/sanctum": "^4.0",
                 "laravel/socialite": "^5.16",
-                "php": "^8.3",
+                "php": "^8.3 || ^8.4 || ^8.5",
                 "spatie/cpu-load-health-check": "^1.0",
-                "spatie/laravel-activitylog": "^4.12",
+                "spatie/laravel-activitylog": "^4.12|^5.0",
                 "spatie/laravel-backup": "^10.2",
                 "spatie/laravel-health": "^1.39",
                 "spatie/laravel-medialibrary": "^10.0|^11.0",
-                "spatie/laravel-permission": "^6.0|^7.0",
+                "spatie/laravel-permission": "^6.0|^7.0|^8.0",
                 "spatie/laravel-translatable": "^6.0"
             },
             "type": "library",
@@ -763,25 +763,25 @@
                 }
             ],
             "description": "Core engine, multilingual routing, and administration platform for Celios CMS.",
-            "time": "2026-11-17T20:06:00+00:00"
+            "time": "2026-11-21T12:13:40+00:00"
         },
         {
             "name": "celios/crm",
-            "version": "v1.0.10",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/celiclazar/celios-crm.git",
-                "reference": "8358d019f4e04e6a578bb04e7d7bd59b02868a31"
+                "reference": "d3520f5bf4ca2d1521508562439644a22eeb3ae1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/celiclazar/celios-crm/zipball/8358d019f4e04e6a578bb04e7d7bd59b02868a31",
-                "reference": "8358d019f4e04e6a578bb04e7d7bd59b02868a31",
+                "url": "https://api.github.com/repos/celiclazar/celios-crm/zipball/d3520f5bf4ca2d1521508562439644a22eeb3ae1",
+                "reference": "d3520f5bf4ca2d1521508562439644a22eeb3ae1",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^11.0|^12.0|^13.0",
-                "php": "^8.3"
+                "php": "^8.3 || ^8.4 || ^8.5"
             },
             "type": "library",
             "extra": {
@@ -806,25 +806,25 @@
                 }
             ],
             "description": "Modular, pluggable CRM engine for Celios CMS supporting local management and third-party CRM drivers.",
-            "time": "2026-11-14T19:02:32+00:00"
+            "time": "2026-11-21T12:13:40+00:00"
         },
         {
             "name": "celios/payment",
-            "version": "v1.0.10",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/celiclazar/celios-payment.git",
-                "reference": "48e4ad169315b11615c1c2991822bd52335a942a"
+                "reference": "d85589a7ff82af09719fa00aa9f3123d9921c3bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/celiclazar/celios-payment/zipball/48e4ad169315b11615c1c2991822bd52335a942a",
-                "reference": "48e4ad169315b11615c1c2991822bd52335a942a",
+                "url": "https://api.github.com/repos/celiclazar/celios-payment/zipball/d85589a7ff82af09719fa00aa9f3123d9921c3bb",
+                "reference": "d85589a7ff82af09719fa00aa9f3123d9921c3bb",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^11.0|^12.0|^13.0",
-                "php": "^8.3"
+                "php": "^8.3 || ^8.4 || ^8.5"
             },
             "type": "library",
             "extra": {
@@ -849,7 +849,7 @@
                 }
             ],
             "description": "Pluggable payment engine for Celios CMS supporting Stripe, PayPal, Mollie, and Bank Wire Transfer.",
-            "time": "2026-11-15T11:14:47+00:00"
+            "time": "2026-11-21T12:13:40+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
